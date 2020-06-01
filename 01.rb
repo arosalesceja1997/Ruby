@@ -1,12 +1,19 @@
+# frozen_string_literal: false
+
 class Holamundo
-  def saluda(x)
-    a = 23
-    puts "Hola mundo "+x+" "+a.to_s
-    puts "Hola #{x} #{a}"
+  def saluda
+    print 'Ingresa un numero: '
+    x = gets.to_i
+    print 'Ingresa un numero: '
+    y = gets.to_i
+    puts "La suma es : #{x + y}"
+    puts "La resta es : #{x - y}"
+    puts "La multiplicacion es : #{x * y}"
+    puts "La divicion es : #{x / y}"
     # Para convertir numeros a string -> to_s o #{x}
   end
 end
 
 obj = Holamundo.new
-obj.saluda("Anthony")
+obj.saluda
 # gets() con esto se queda parado el proceso
